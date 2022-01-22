@@ -1,6 +1,6 @@
 'use strict';
 
-a = 15;
+let a = 15;
 console.log(a);
 
 
@@ -26,12 +26,3 @@ console.log(a);
     // console.log(name);
     // var name = "Ivan";
 */}
-
-
-    {
-    let result = 50;
-
-
-}
-
-console.log(result);
