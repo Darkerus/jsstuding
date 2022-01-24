@@ -1,28 +1,14 @@
-'use strict';
+let numberOfFilms = window.prompt('Сколько фильмов Вы уже посмотрели?');
 
-let a = 15;
-console.log(a);
+const personalMovieDB = {
+count: numberOfFilms,
+movies: {},
+actors: {},
+genres: [],
+private: false,
+};
+let lastMovie = prompt('Один из последних просмотренных фильмов?');
+let review = prompt('Оцените его от 1 до 10');
 
-
-{/*
-    // let number = 5;
-    // const leftBorderWidth = 1;
-
-    // number = 10;
-    // console.log(number);
-
-     // leftBorderWidth = 10;
-
-    // const obj = {
-    //     a: 50
-
-
-    // };
-
-    // obj.a = 10;
-
-    // console.log(obj);
-
-    // console.log(name);
-    // var name = "Ivan";
-*/}
+personalMovieDB.movies[lastMovie] = review;
+console.log(personalMovieDB.movies);
